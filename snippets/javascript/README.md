@@ -14,9 +14,9 @@ let size = 200 // Number of items to return
 let page = 1 // Page Number to return
 let sort_by = "lga_name" // Field used in sorting responses
 let fields = "lga_name,state_name,ward_name" // Comma-separated list of fields (No space)
-let cql = "state_name IN ('Kaduna', 'Kano')" // Read documentations about Querying/Filtering (CQL)
+let cql_filter = "state_name IN ('Kaduna', 'Kano')" // Read documentations about Querying/Filtering (CQL)
 
-let response = =getDatasets(resource_name=resource_name, size=size, cql=cql) // You can optionally pass other parameters as defined above
+let response = =getDatasets(resource_name=resource_name, size=size, cql=cql_filter) // You can optionally pass other parameters as defined above
 
 // Resolve the response callback
 ```
