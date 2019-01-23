@@ -15,9 +15,9 @@ size = 10 # Number of items to return
 page = 1 # Page Number to return
 sort_by = "lga_name" # Field used in sorting responses
 fields = "lga_name,state_name,ward_name" # Comma-separated list of fields (No space)
-cql = "state_name IN ('Kaduna', 'Kano')" # Read documentations about Querying/Filtering (CQL)
+cql_filter = "state_name IN ('Kaduna', 'Kano')" # Read documentations about Querying/Filtering (CQL)
 
-response = getDatasets(resource_name=resource_name, size=size, cql=cql) # You can optionally pass other parameters as defined above
+response = getDatasets(resource_name=resource_name, size=size, cql=cql_filter) # You can optionally pass other parameters as defined above
 print(response)
 ```
 
